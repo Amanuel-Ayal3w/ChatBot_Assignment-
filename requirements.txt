@@ -1,0 +1,8 @@
+# Deep learning library
+torch
+
+# Numerical computing library
+numpy
+
+# Natural Language Processing toolkit
+nltk
