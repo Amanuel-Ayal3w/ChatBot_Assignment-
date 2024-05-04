@@ -1,7 +1,7 @@
 # ChatBot_Assignment
 
-Amanuel - Ayalew  ATE/3871/13
-Abdurahman - Mohamme ATE/8901/13
+-Amanuel - Ayalew  ATE/3871/13
+-Abdurahman - Mohamme ATE/8901/13
 
 ## Installation
 
@@ -9,11 +9,11 @@ Abdurahman - Mohamme ATE/8901/13
 
 ```console
 mkdir myproject
-$ cd myproject
+$ cd CHATBOT_ASSIGNMENT
 $ python3 -m venv venv
 ```
 ### Activate it
-Mac / Linux:
+Linux
 ```console
 . venv/bin/activate
 ```
