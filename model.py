@@ -1,13 +1,10 @@
 import torch
 import torch.nn as nn
 
-# This part imports the PyTorch library, which is used for building neural networks.
-# It also imports the neural network module from PyTorch.
+# This part imports the PyTorch library,
 
 class NeuralNet(nn.Module):
-    # This defines a special program called NeuralNet.
-    # It's like a blueprint for a neural network.
-
+   #
     def __init__(self, input_size, hidden_size, num_classes):
         # This part sets up the program before using it.
 

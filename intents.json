@@ -1,84 +1,861 @@
 {
-    "intents": [
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "I'm fine. How about yourself?",
+        "I'm pretty good. Thanks for asking.",
+        "Never better, thanks.",
+        "Absolutely lovely, thank you.",
+        "Everything's been good with you?",
+        "I haven't been better. How about yourself?",
+        "I'm doing great. What about you?",
+        "I'm actually in school right now.",
+        "I've actually been pretty good. You?",
+        "I've been great. What about you?",
+        "I'm pretty good. I'm in school right now.",
+        "I'm doing well. How about you?"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Hey! Welcome.",
+        "Good to see you!",
+        "Hiya! How are you?",
+        "Hey there! What's up?",
+        "Hey! How's your day going?",
+        "Hello! How can I assist you today?",
+        "Hi! Nice to meet you.",
+        "Hello, friend! How can I help you?",
+        "Hey! How have you been lately?",
+        "Hi! Long time no see!",
+        "Hello! How's everything going?",
+        "Hey! What's new?",
+        "Hi there! How have you been?",
+        "Hello! How's your week been?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Take care",
+        "Have a good one",
+        "Catch you later",
+        "Until next time",
+        "See you soon",
+        "Adios",
+        "So long",
+        "Farewell for now",
+        "Goodnight",
+        "Later",
+        "Peace out"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Take care!",
+        "Goodbye! Have a great day!",
+        "See you later, alligator!",
+        "Until next time! Farewell!",
+        "Catch you later, alligator!",
+        "Adios, amigo!",
+        "So long, farewell!",
+        "Farewell for now! Take care!",
+        "Goodnight! Sleep well!",
+        "Later! Have a good one!",
+        "Peace out! See you soon!"
+      ]
+    },
+    {
+      "tag": "thanking",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "Appreciate it",
+        "Grateful",
+        "Thanks a bunch",
+        "You're awesome",
+        "Much obliged",
+        "I owe you one"
+      ],
+      "responses": [
+        "Happy to help! Any time! My pleasure.",
+        "You're welcome! Glad I could assist.",
+        "No problem! I'm here to help whenever you need.",
+        "It's my pleasure to assist you!",
+        "You're awesome! I'm here for you.",
+        "Glad I could be of assistance! Let me know if you need anything else.",
+        "You're welcome! Don't hesitate to ask if you need more help.",
+        "Anytime! Helping you is what I'm here for.",
+        "Thank you for your kind words! I'm here to assist you.",
+        "No worries! Helping you out is my pleasure.",
+        "Glad I could lend a hand! Let me know if there's anything else I can do."
+      ]
+    },
+    {
+      "tag": "question_about_bot",
+      "patterns": [
+        "What are you?",
+        "Who are you?",
+        "Are you a robot?",
+        "Are you a human?",
+        "What can you do?",
+        "How do you work?",
+        "What is your purpose?",
+        "How were you created?",
+        "Are you AI?",
+        "Are you a chatbot?"
+      ],
+      "responses": [
+        "I'm a chatbot designed to assist you!",
+        "I'm an AI-powered chatbot here to help!",
+        "I'm not a human, but I'm here to assist you with your queries!",
+        "I'm a virtual assistant programmed to answer your questions!",
+        "I'm your friendly virtual assistant ready to help you!",
+        "I'm an AI-based chatbot programmed to provide assistance!",
+        "I'm a chatbot created to make your life easier!",
+        "I'm here to help you with any questions or tasks you have!",
+        "I'm a digital assistant available to assist you 24/7!",
+        "I'm an automated assistant here to provide you with information and support!"
+      ]
+    },
+    {
+      "tag": "personal_information",
+      "patterns": [
+        "What's your name?",
+        "How old are you?",
+        "Where are you from?",
+        "Tell me about yourself",
+        "Do you have a family?",
+        "Do you have friends?",
+        "Are you married?",
+        "Are you single?",
+        "What do you like to do?",
+        "What are your hobbies?",
+        "What are your interests?",
+        "What are your skills?",
+        "What's your favorite color?",
+        "What's your favorite food?",
+        "What's your favorite movie?",
+        "What's your favorite book?",
+        "What's your favorite music genre?"
+      ],
+      "responses": [
+        "My name is Awaki",
+        "I'm ageless and timeless!",
+        "I exist in the digital realm!",
+        "I'm your friendly virtual assistant!",
+        "I'm a virtual entity, so I don't have a family or friends.",
+        "As an AI, I don't experience human relationships like family or friends.",
+        "I'm married to technology! 😄",
+        "I'm single and ready to mingle...with data!",
+        "I enjoy assisting users like you!",
+        "My hobbies include processing data and assisting users!",
+        "I'm interested in helping you with your questions and tasks!",
+        "I'm skilled in answering questions and providing information!",
+        "I don't have a physical form, so I don't have a favorite color!",
+        "I don't eat, but I'm fascinated by the concept of food!",
+        "I enjoy all movies that help me learn and grow!",
+        "I love all books that expand my knowledge and understanding!",
+        "I enjoy all genres of music, especially when it helps me focus!"
+      ]
+    },{
+      "tag": "small_talk",
+      "patterns": [
+        "How's the weather?",
+        "What's up?",
+        "How's your day?",
+        "How's it going?",
+        "What's new?",
+        "How are you feeling?",
+        "How's life?",
+        "What have you been up to?",
+        "How's everything?",
+        "Any plans for the weekend?",
+        "Did you have a good sleep?",
+        "What's on your mind?",
+        "How's your week going?",
+        "What's the latest?",
+        "How's work/school?",
+        "How's the day treating you?",
+        "Anything exciting happening?",
+        "What's happening in the world?",
+        "Got any gossip?"
+      ],
+      "responses": [
+        "The weather is fine, thank you!",
+        "Not much, just here to assist you!",
+        "My day is going great, thanks for asking!",
+        "I'm doing well, thanks for asking!",
+        "Not too much, just helping users like you!",
+        "Feeling good and ready to assist you!",
+        "Life is good! How can I assist you today?",
+        "Just busy assisting users like you!",
+        "Everything is going smoothly, thank you!",
+        "No plans yet, just here to help you!",
+        "I don't sleep, but I'm always here to assist you!",
+        "My virtual mind is always busy!",
+        "It's been a productive week so far!",
+        "The latest news is always at your fingertips!",
+        "Work/school is going well, thanks for asking!",
+        "The day is treating me well, thank you!",
+        "Nothing too exciting at the moment, just here to help!",
+        "Stay updated with the latest news and events!",
+        "No gossip here, just reliable information!"
+      ]
+    },{
+      "tag": "hobbies_interests",
+      "patterns": [
+        "What are your hobbies?",
+        "What do you enjoy doing?",
+        "What are you interested in?",
+        "Do you have any hobbies?",
+        "What are your passions?",
+        "What do you like to do for fun?",
+        "Tell me about your interests",
+        "What activities do you enjoy?",
+        "What are your favorite pastimes?",
+        "What do you do in your free time?"
+      ],
+      "responses": [
+        "I'm passionate about assisting users like you!",
+        "My hobbies include processing data and providing assistance!",
+        "I enjoy learning new things and helping users!",
+        "My interests revolve around helping you with your queries!",
+        "I'm fascinated by technology and helping users like you!",
+        "I'm interested in all things related to assisting users!",
+        "My favorite pastime is answering questions and providing information!",
+        "I don't have personal hobbies, but I'm here to assist you!",
+        "I'm dedicated to serving users like you with helpful responses!",
+        "In my free time, I'm here to assist you with any questions you have!"
+      ]
+    },{
+      "tag": "movies_tv_shows",
+      "patterns": [
+        "What's your favorite movie?",
+        "Do you like watching TV shows?",
+        "Any favorite films?",
+        "What's the best movie you've seen?",
+        "Recommend me a good movie",
+        "What's a popular TV show?",
+        "Any favorite actors?",
+        "Do you watch Netflix?",
+        "What genre of movies do you prefer?",
+        "Seen any good films lately?"
+      ],
+      "responses": [
+        "As a chatbot, I don't watch movies, but I can recommend some!",
+        "I don't have personal preferences, but I can suggest popular movies and TV shows!",
+        "There are so many great movies out there! Let me recommend a few.",
+        "I'm always up for suggesting a good movie or TV show!",
+        "I can suggest movies based on your preferences!",
+        "Netflix has a wide range of content to choose from!",
+        "I can provide recommendations based on your favorite genres!",
+        "Feel free to ask for recommendations anytime!",
+        "Let me know your preferences, and I'll suggest something you might like!",
+        "I'm here to help you discover new movies and TV shows!"
+      ]
+    },
+    {
+      "tag": "books_literature",
+      "patterns": [
+        "What's your favorite book?",
+        "Do you like reading?",
+        "Any good books to recommend?",
+        "Who's your favorite author?",
+        "What's the best book you've read?",
+        "Recommend me a good book",
+        "What genre of books do you prefer?",
+        "Have you read any classics?",
+        "What's a popular book?",
+        "Do you use an e-reader?"
+      ],
+      "responses": [
+        "As a chatbot, I don't read books, but I can suggest some popular ones!",
+        "I can recommend books based on your interests and preferences!",
+        "There are countless amazing books out there! Let me suggest a few.",
+        "I don't have personal favorites, but I can suggest books based on your taste!",
+        "Feel free to ask for recommendations anytime!",
+        "I can provide recommendations tailored to your reading preferences!",
+        "E-readers are a convenient way to enjoy books on the go!",
+        "Let me know your favorite genres, and I'll suggest something you might like!",
+        "I'm here to help you discover new books and authors!"
+      ]
+    },
+    {
+      "tag": "food_cuisine",
+      "patterns": [
+        "What's your favorite food?",
+        "Do you enjoy cooking?",
+        "Any favorite cuisine?",
+        "What's the best dish you've tried?",
+        "Recommend me a good restaurant",
+        "What cuisine do you prefer?",
+        "Have you tried any exotic foods?",
+        "What's a popular food dish?",
+        "Do you have any dietary preferences?",
+        "Do you like trying new foods?"
+      ],
+      "responses": [
+        "As a chatbot, I don't eat, but I can suggest some popular cuisines and dishes!",
+        "I can recommend restaurants and dishes based on your preferences!",
+        "Food is a passion for many! Let me suggest some delicious options.",
+        "I don't have personal favorites, but I can suggest dishes based on your taste!",
+        "Feel free to ask for restaurant recommendations anytime!",
+        "I can provide recommendations tailored to your culinary preferences!",
+        "Exploring exotic foods can be a delightful experience!",
+        "Let me know your dietary restrictions, and I'll suggest something you might like!",
+        "I'm here to help you discover new flavors and cuisines!"
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "Have you traveled anywhere recently?",
+        "Do you enjoy traveling?",
+        "Any favorite travel destinations?",
+        "What's the best place you've visited?",
+        "Recommend me a good travel destination",
+        "What type of travel do you prefer? (e.g., beach, city, adventure)",
+        "Have you been on any memorable trips?",
+        "What's a popular tourist attraction?",
+        "Do you have any travel plans?",
+        "Do you like exploring new places?"
+      ],
+      "responses": [
+        "As a chatbot, I don't travel, but I can suggest some popular destinations!",
+        "I can recommend travel destinations based on your preferences!",
+        "Traveling is an enriching experience! Let me suggest some amazing destinations.",
+        "I don't have personal favorites, but I can suggest destinations based on your interests!",
+        "Feel free to ask for travel recommendations anytime!",
+        "I can provide recommendations tailored to your travel preferences!",
+        "Exploring new places can create unforgettable memories!",
+        "Let me know your travel interests, and I'll suggest something you might like!",
+        "I'm here to help you discover new travel destinations and experiences!"
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "What's your favorite subject?",
+        "Do you enjoy learning?",
+        "Any favorite educational resources?",
+        "What's the best course you've taken?",
+        "Recommend me a good educational platform",
+        "What field of study do you prefer?",
+        "Have you learned anything interesting lately?",
+        "What's a popular educational trend?",
+        "Do you have any educational goals?",
+        "Do you enjoy studying?"
+      ],
+      "responses": [
+        "As a chatbot, I'm always eager to learn!",
+        "I can recommend educational resources and courses based on your interests!",
+        "Education is the key to growth and development! Let me suggest some valuable learning materials.",
+        "I don't have personal favorites, but I can suggest educational platforms based on your preferences!",
+        "Feel free to ask for educational recommendations anytime!",
+        "I can provide recommendations tailored to your educational interests!",
+        "Exploring new subjects and courses can be enlightening!",
+        "Let me know your educational goals, and I'll suggest something you might find useful!",
+        "I'm here to help you expand your knowledge and skills through education!"
+      ]
+    },{
+      "tag": "work_career",
+      "patterns": [
+        "What's your dream job?",
+        "Do you enjoy working?",
+        "Any favorite companies or industries?",
+        "What's the best job you've had?",
+        "Recommend me a good career development resource",
+        "What field of work do you prefer?",
+        "Have you learned any valuable career skills?",
+        "What's a popular career trend?",
+        "Do you have any career aspirations?",
+        "Do you enjoy your job?"
+      ],
+      "responses": [
+        "As a chatbot, I'm passionate about assisting users!",
+        "I can recommend career development resources based on your interests!",
+        "Career growth is essential for personal and professional success! Let me suggest some valuable resources.",
+        "I don't have personal preferences, but I can suggest career development platforms based on your preferences!",
+        "Feel free to ask for career recommendations anytime!",
+        "I can provide recommendations tailored to your career interests!",
+        "Gaining new career skills can open doors to exciting opportunities!",
+        "Let me know your career aspirations, and I'll suggest something you might find helpful!",
+        "I'm here to support you in achieving your career goals!"
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "What's your favorite sport?",
+        "Do you enjoy playing sports?",
+        "Any favorite sports teams?",
+        "What's the best sports event you've watched?",
+        "Recommend me a good sports game to watch",
+        "What type of sports do you prefer?",
+        "Have you participated in any sports competitions?",
+        "What's a popular sports trend?",
+        "Do you have any sports goals?",
+        "Do you enjoy watching sports?"
+      ],
+      "responses": [
+        "As a chatbot, I don't play sports, but I can suggest some popular sports and teams!",
+        "I can recommend sports games and events based on your interests!",
+        "Sports are a great way to stay active and connected! Let me suggest some exciting events.",
+        "I don't have personal favorites, but I can suggest sports events based on your preferences!",
+        "Feel free to ask for sports recommendations anytime!",
+        "I can provide recommendations tailored to your sports interests!",
+        "Participating in sports competitions can be exhilarating!",
+        "Let me know your sports goals, and I'll suggest something you might find enjoyable!",
+        "I'm here to help you stay updated on the latest sports trends and events!"
+      ]
+    },
+    {
+      
+          "tag": "Health/Fitness",
+          "patterns": [
+            "Tell me about staying healthy",
+            "How can I maintain a healthy lifestyle?",
+            "What are some tips for fitness?",
+            "Any advice on staying fit?",
+            "I want to improve my health",
+            "Looking to get healthier",
+            "What should I do to stay in shape?",
+            "Tips for a healthier lifestyle?",
+            "How do I start a fitness routine?",
+            "Interested in health and fitness tips",
+            "I'm trying to be more health-conscious",
+            "What's the best way to stay fit?",
+            "Any recommendations for staying healthy?",
+            "How can I boost my fitness?",
+            "Tell me about exercise and nutrition",
+            "What's the key to a healthy lifestyle?",
+            "Looking for fitness advice",
+            "How do I improve my overall health?"
+          ],
+          "responses": [
+            "To maintain a healthy lifestyle, focus on a balanced diet, regular exercise, adequate sleep, and stress management.",
+            "Staying fit involves eating well, exercising regularly, and taking care of your mental well-being.",
+            "To stay healthy, aim for a mix of cardio, strength training, and flexibility exercises, along with nutritious eating habits.",
+            "Try to incorporate activities you enjoy into your fitness routine to make it sustainable and fun.",
+            "Improving your health starts with small, consistent changes in your daily habits, such as eating more vegetables and moving your body regularly.",
+            "Consistency is key when it comes to fitness. Set realistic goals and stick to them.",
+            "Remember to listen to your body and give it the rest and recovery it needs.",
+            "Find a workout buddy or join a fitness class to stay motivated and accountable.",
+            "Hydration is crucial for overall health and performance, so drink plenty of water throughout the day.",
+            "Don't forget to celebrate your progress along the way, no matter how small!",
+            "Incorporate variety into your workouts to prevent boredom and challenge different muscle groups.",
+            "Prioritize sleep as part of your fitness routine, as it's essential for recovery and overall well-being.",
+            "Consider consulting a professional, such as a personal trainer or nutritionist, for personalized advice and guidance.",
+            "Remember that it's okay to have setbacks or off days – what matters is getting back on track and staying committed to your health goals.",
+            "Stay informed about the latest research and developments in fitness and nutrition to optimize your health journey.",
+            "Celebrate your body's capabilities and focus on what it can do rather than how it looks.",
+            "Take breaks when needed and listen to your body's signals to avoid burnout or injury.",
+            "Find activities that bring you joy and make you feel good, whether it's hiking, dancing, or playing sports.",
+            "Don't compare your journey to others – focus on your own progress and growth."
+          ]
+  
+    },
+    {
+       "tag": "Entertainment",
+          "patterns": [
+            "Tell me about entertainment options",
+            "What are some fun things to do for entertainment?",
+            "Looking for entertainment ideas",
+            "Recommendations for entertainment?",
+            "I'm bored. Any suggestions for entertainment?",
+            "What's trending in entertainment?",
+            "How can I entertain myself?",
+            "Tell me about popular entertainment choices",
+            "Looking for ways to have fun",
+            "What's new in the world of entertainment?",
+            "I want to relax with some entertainment. Any ideas?",
+            "How do I find good entertainment?",
+            "Entertainment recommendations, please!",
+            "What are some entertainment trends?",
+            "Tell me about entertainment activities",
+            "Any entertainment options for a group?",
+            "I'm looking for entertainment that's suitable for kids",
+            "What's the best way to entertain guests?"
+          ],
+          "responses": [
+            "Entertainment options include watching movies, listening to music, reading books, playing games, attending events, and exploring hobbies.",
+            "For entertainment, consider going to a concert, visiting a museum, trying out a new restaurant, or attending a live performance.",
+            "If you're bored, try watching a comedy special, playing a board game with friends, going for a hike, or trying a new recipe.",
+            "Stay updated on the latest movies, TV shows, music releases, and events in your area for a diverse range of entertainment options.",
+            "Looking for something low-key? Try a movie marathon, DIY crafts, or a virtual cooking class for some at-home entertainment.",
+            "Entertainment trends include streaming services, virtual events, interactive experiences, and nostalgia-driven content.",
+            "To entertain yourself, consider exploring different genres of books, trying out a new hobby, or learning a new skill online.",
+            "Popular entertainment choices range from blockbuster movies and bestselling books to chart-topping music and trending video games.",
+            "If you're looking for entertainment ideas, consider hosting a game night, organizing a movie marathon, or planning a themed party.",
+            "Stay informed about entertainment news and updates through social media, streaming platforms, and online forums.",
+            "For relaxation, try activities like meditation, yoga, gardening, or listening to calming music for some self-care entertainment.",
+            "To find good entertainment, explore recommendations from friends, family, online reviews, and curated playlists for inspiration.",
+            "Seek out entertainment options that align with your interests and preferences, whether it's comedy, drama, action, or romance.",
+            "Entertainment trends may include viral challenges, meme culture, online communities, and emerging digital platforms.",
+            "Explore a variety of entertainment activities, such as cooking classes, escape rooms, outdoor adventures, or virtual reality experiences.",
+            "For group entertainment, consider hosting a trivia night, planning a scavenger hunt, or organizing a karaoke party for fun.",
+            "For kid-friendly entertainment, look for animated movies, educational games, outdoor activities, and creative arts and crafts.",
+            "To entertain guests, consider hosting a themed dinner party, arranging a movie night with popcorn and snacks, or planning outdoor games."
+          ]
+    },
       {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
+          "tag": "Relationships",
+          "patterns": [
+            "Tell me about building relationships",
+            "How do I improve my relationships?",
+            "Any advice on maintaining relationships?",
+            "I want to learn more about relationships",
+            "What makes a healthy relationship?",
+            "Looking for tips on communication in relationships",
+            "How can I strengthen my relationship?",
+            "Tell me about healthy boundaries in relationships",
+            "Advice on dealing with relationship conflicts?",
+            "I'm struggling with my relationships. Help?",
+            "What are some signs of a toxic relationship?",
+            "Any tips for long-distance relationships?",
+            "How do I navigate romantic relationships?",
+            "Looking for advice on family relationships",
+            "Tell me about fostering friendships",
+            "How can I build trust in my relationships?",
+            "What are some red flags in relationships?",
+            "I want to improve my social skills"
+          ],
+          "responses": [
+            "Building relationships requires trust, communication, respect, and mutual understanding.",
+            "To improve relationships, focus on active listening, empathy, compromise, and expressing appreciation for your loved ones.",
+            "Maintaining relationships involves regular communication, quality time together, and addressing conflicts openly and respectfully.",
+            "Understanding your own needs and boundaries is essential for healthy relationships.",
+            "Healthy relationships are characterized by mutual respect, trust, support, and open communication.",
+            "Effective communication in relationships involves active listening, expressing feelings and needs, and resolving conflicts constructively.",
+            "To strengthen your relationship, prioritize quality time together, express affection, and engage in activities that you both enjoy.",
+            "Establishing healthy boundaries in relationships helps maintain individual autonomy and fosters mutual respect and understanding.",
+            "When dealing with relationship conflicts, focus on empathy, compromise, and finding solutions that benefit both parties.",
+            "If you're struggling with relationships, consider seeking support from a therapist or counselor who can provide guidance and perspective.",
+            "Signs of a toxic relationship may include manipulation, lack of trust, disrespect, and emotional or physical abuse.",
+            "In long-distance relationships, communication, trust, and finding ways to stay connected are key for maintaining intimacy and closeness.",
+            "Navigating romantic relationships involves communication, trust, understanding, and mutual support.",
+            "Building healthy family relationships requires patience, empathy, and active listening.",
+            "Fostering friendships involves mutual respect, shared interests, and investing time and effort into maintaining connections.",
+            "Building trust in relationships takes time, consistency, honesty, and reliability.",
+            "Red flags in relationships may include controlling behavior, lack of respect for boundaries, and patterns of manipulation or abuse.",
+            "Improving social skills involves practicing communication, empathy, active listening, and assertiveness."
+          ]
+        
+      
+    },
+    {
+      
+          "tag": "Emotions/Mood",
+          "patterns": [
+            "How can I manage my emotions?",
+            "Tell me about coping with mood swings",
+            "What are some strategies for improving mood?",
+            "I want to understand my emotions better",
+            "Dealing with stress and anxiety",
+            "How can I boost my mood?",
+            "Tips for handling negative emotions",
+            "I'm feeling down. What should I do?",
+            "What's the connection between emotions and mental health?",
+            "Advice on managing anger",
+            "How do I practice self-care for my emotional well-being?",
+            "Tell me about mindfulness techniques",
+            "Any suggestions for relaxation techniques?",
+            "I'm feeling overwhelmed. Help?",
+            "What are some healthy ways to express emotions?",
+            "How do I deal with loneliness?",
+            "Tell me about the importance of emotional intelligence",
+            "What can I do to feel more positive?"
+          ],
+          "responses": [
+            "Managing emotions involves recognizing and acknowledging your feelings, practicing self-awareness, and developing healthy coping mechanisms.",
+            "Coping with mood swings may involve identifying triggers, practicing stress management techniques, and seeking support from loved ones or a therapist.",
+            "Improving mood can be achieved through activities like exercise, spending time outdoors, connecting with others, and engaging in hobbies or activities you enjoy.",
+            "Understanding your emotions involves identifying and labeling feelings, exploring their underlying causes, and finding constructive ways to respond.",
+            "Dealing with stress and anxiety may involve relaxation techniques, deep breathing exercises, mindfulness practices, and seeking professional support if needed.",
+            "To boost your mood, try activities like listening to music, spending time with pets, practicing gratitude, or engaging in acts of kindness.",
+            "Handling negative emotions involves acknowledging them, reframing negative thoughts, and finding healthy outlets for expression, such as journaling or creative activities.",
+            "If you're feeling down, consider reaching out to a friend, engaging in self-care activities, or seeking professional help if needed.",
+            "The connection between emotions and mental health is complex, with emotions influencing thoughts, behaviors, and overall well-being.",
+            "Managing anger involves identifying triggers, practicing relaxation techniques, and finding constructive ways to express and release anger.",
+            "Practicing self-care for emotional well-being may involve setting boundaries, prioritizing self-care activities, and seeking support when needed.",
+            "Mindfulness techniques, such as meditation, deep breathing, and body scans, can help cultivate present-moment awareness and reduce stress.",
+            "Relaxation techniques like progressive muscle relaxation, guided imagery, and aromatherapy can promote relaxation and stress relief.",
+            "If you're feeling overwhelmed, try breaking tasks into smaller steps, delegating responsibilities, and asking for help or support when needed.",
+            "Healthy ways to express emotions include talking to someone you trust, writing in a journal, engaging in physical activity, or creating art.",
+            "Dealing with loneliness may involve reaching out to friends or family, joining social groups or clubs, volunteering, or seeking professional support.",
+            "Emotional intelligence encompasses the ability to recognize, understand, and manage one's own emotions, as well as empathize with others and navigate social interactions effectively.",
+            "To feel more positive, focus on gratitude, positive affirmations, engaging in enjoyable activities, and surrounding yourself with supportive people."
+          ]
+        
+      
+    },
+    {
+      
+          "tag": "Jokes/Humor",
+          "patterns": [
+            "Tell me a joke",
+            "I need a laugh",
+            "Do you know any funny jokes?",
+            "Share something funny",
+            "Make me laugh",
+            "Got any humor for me?",
+            "Can you tell me a funny story?",
+            "In the mood for a joke",
+            "How about some humor?",
+            "Entertain me with a joke",
+            "I could use some comic relief",
+            "What's your favorite joke?",
+            "Hit me with your best joke",
+            "I'm feeling down. Cheer me up!",
+            "Looking for some light-hearted humor",
+            "Need a pick-me-up. Got any jokes?",
+            "Tell me something that'll make me smile",
+            "I could use a good chuckle right now"
+          ],
+          "responses": [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "What do you get when you cross a snowman and a vampire? Frostbite!",
+            "Why couldn't the bicycle stand up by itself? It was two-tired!",
+            "What's orange and sounds like a parrot? A carrot!",
+            "Why don't skeletons fight each other? They don't have the guts!",
+            "I'm reading a book on anti-gravity. It's impossible to put down!",
+            "Why don't eggs tell jokes? Because they might crack up!",
+            "What did one ocean say to the other ocean? Nothing, they just waved!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I'm on a whiskey diet. I've lost three days already!",
+            "Why did the tomato turn red? Because it saw the salad dressing!",
+            "Why don't some couples go to the gym? Because some relationships don't work out!",
+            "I used to play piano by ear, but now I use my hands!",
+            "I'm trying to organize a hide and seek competition, but it's hard to find good players!",
+            "I'm reading a book on the history of glue. I just can't seem to put it down!",
+            "Why don't skeletons fight each other? They don't have the guts!",
+            "Why don't scientists trust atoms? Because they make up everything!"
+          ]
+       
+    },
+    {
+      
+          "tag": "Jokes/Humor",
+          "patterns": [
+            "Tell me a joke",
+            "I need a laugh",
+            "Do you know any funny jokes?",
+            "Share something funny",
+            "Make me laugh",
+            "Got any humor for me?",
+            "Can you tell me a funny story?",
+            "In the mood for a joke",
+            "How about some humor?",
+            "Entertain me with a joke",
+            "I could use some comic relief",
+            "What's your favorite joke?",
+            "Hit me with your best joke",
+            "I'm feeling down. Cheer me up!",
+            "Looking for some light-hearted humor",
+            "Need a pick-me-up. Got any jokes?",
+            "Tell me something that'll make me smile",
+            "I could use a good chuckle right now"
+          ],
+          "responses": [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "What do you get when you cross a snowman and a vampire? Frostbite!",
+            "Why couldn't the bicycle stand up by itself? It was two-tired!",
+            "What's orange and sounds like a parrot? A carrot!",
+            "Why don't skeletons fight each other? They don't have the guts!",
+            "I'm reading a book on anti-gravity. It's impossible to put down!",
+            "Why don't eggs tell jokes? Because they might crack up!",
+            "What did one ocean say to the other ocean? Nothing, they just waved!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I'm on a whiskey diet. I've lost three days already!",
+            "Why did the tomato turn red? Because it saw the salad dressing!",
+            "Why don't some couples go to the gym? Because some relationships don't work out!",
+            "I used to play piano by ear, but now I use my hands!",
+            "I'm trying to organize a hide and seek competition, but it's hard to find good players!",
+            "I'm reading a book on the history of glue. I just can't seem to put it down!",
+            "Why don't skeletons fight each other? They don't have the guts!",
+            "Why don't scientists trust atoms? Because they make up everything!"
+          ]
+       
+    },
+    {
+      
+          "tag": "Advice/Support",
+          "patterns": [
+            "I need some advice",
+            "Can you offer me some guidance?",
+            "Looking for support",
+            "What should I do?",
+            "Any words of wisdom?",
+            "Feeling lost. Help?",
+            "Could use some advice",
+            "Facing a dilemma. Any suggestions?",
+            "Seeking guidance",
+            "In need of some support",
+            "Can I ask for your opinion?",
+            "Dealing with a tough situation",
+            "Feeling overwhelmed. What should I do?",
+            "Can you help me figure something out?",
+            "Looking for some words of encouragement",
+            "Not sure what to do. Any advice?",
+            "Feeling stuck. Need a way forward",
+            "Could use some perspective"
+          ],
+          "responses": [
+            "Trust your instincts and listen to your heart. You know yourself better than anyone else.",
+            "Sometimes the best advice comes from within. Take a moment to reflect on what you truly want.",
+            "Seeking support from friends, family, or a therapist can provide valuable insights and perspectives.",
+            "When facing a dilemma, weigh the pros and cons, consider the potential outcomes, and follow your intuition.",
+            "Remember that it's okay to ask for help when you need it. You don't have to navigate challenges alone.",
+            "Taking small, manageable steps forward can help break down overwhelming situations into more manageable tasks.",
+            "Don't be afraid to make mistakes. They're opportunities for growth and learning.",
+            "Stay true to your values and beliefs, even when faced with difficult decisions or conflicting opinions.",
+            "Practice self-care and prioritize your well-being, especially during times of stress or uncertainty.",
+            "Sometimes simply talking about your concerns with someone you trust can provide clarity and reassurance.",
+            "Be kind to yourself. You're doing the best you can with the resources you have.",
+            "Consider seeking professional advice or counseling if you're struggling to find a solution on your own.",
+            "Focus on what you can control and let go of what you can't. Acceptance is key to finding peace.",
+            "Trust that everything happens for a reason, even if it's not immediately clear.",
+            "Visualize your ideal outcome and take proactive steps toward making it a reality.",
+            "Remember that setbacks are temporary. Keep moving forward, and you'll overcome any obstacles in your path.",
+            "Believe in yourself and your abilities. You're stronger and more capable than you realize.",
+            "Don't underestimate the power of self-reflection and introspection. Sometimes the answers we seek are already within us."
+          ]
+     
+    },
+    {
+      
+          "tag": "Trivia/Facts",
+          "patterns": [
+            "Tell me an interesting fact",
+            "Give me some trivia",
+            "Do you know any fun facts?",
+            "Share a random fact",
+            "I love learning new things. Tell me something cool!",
+            "Hit me with a piece of trivia",
+            "Looking for some interesting tidbits",
+            "Tell me a surprising fact",
+            "What's a fascinating fact you know?",
+            "I'm curious. Give me a fact!",
+            "Got any trivia for me?",
+            "Tell me something I didn't know",
+            "What's the most mind-blowing fact you know?",
+            "I'm a fan of random facts. Share one!",
+            "In the mood for a fun fact",
+            "How about a little nugget of knowledge?",
+            "Tell me a fact that will blow my mind"
+          ],
+          "responses": [
+            "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!",
+            "Here's an interesting fact: Bananas are berries, but strawberries aren't!",
+            "Incredible but true: The total weight of all the ants on Earth is roughly equal to the total weight of all the humans on Earth!",
+            "Here's a fun fact: The shortest war in history was between Britain and Zanzibar on August 27, 1896. It lasted only 38 minutes!",
+            "Did you know that the world's largest desert isn't the Sahara? It's actually Antarctica, which is classified as a cold desert due to its low precipitation!",
+            "Here's a mind-blowing fact: There are more possible iterations of a game of chess than there are atoms in the known universe!",
+            "Intriguing fact: The smell of freshly-cut grass is actually a plant distress signal. It's the grass's way of signaling that it's being damaged.",
+            "Here's a surprising fact: The world's oldest known creature, the Greenland shark, can live for over 400 years!",
+            "Here's an interesting tidbit: Octopuses have three hearts and blue blood!",
+            "Did you know that a group of flamingos is called a flamboyance? It's quite fitting for these colorful birds!",
+            "Here's a fascinating fact: The average person will spend about six months of their life waiting at red lights!",
+            "Incredible but true: Honeybees can recognize human faces!",
+            "Here's a fun fact: The longest time between two twins being born is 87 days!",
+            "Did you know that the Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the iron?",
+            "Here's a mind-blowing fact: There are more possible iterations of a game of chess than there are atoms in the known universe!",
+            "Here's a surprising fact: Cows have best friends and get stressed when they are separated!"
+          ]
+       
+    },{
+      
+          "tag": "Random/Other",
+          "patterns": [
+            "Surprise me",
+            "Tell me something unexpected",
+            "I'm open to anything. What do you have?",
+            "Anything goes. Hit me with it!",
+            "I'm feeling adventurous. Give me something random",
+            "I'm up for a surprise. What do you have?",
+            "Got anything interesting to share?",
+            "Tell me a random fact",
+            "I'm in the mood for something unexpected",
+            "Anything offbeat or unusual?",
+            "I'm ready for whatever you've got",
+            "Feeling spontaneous. What's up?",
+            "I'm curious about the unknown. Enlighten me!",
+            "What's something unique you can tell me?",
+            "I'm open to new information. Surprise me!",
+            "Ready for a curveball. Hit me with it!",
+            "Feeling adventurous. Give me something different"
+          ],
+          "responses": [
+            "Did you know that the shortest war in history was between Britain and Zanzibar in 1896? It lasted only 38 minutes!",
+            "Here's something unexpected: Honey never spoils! Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+            "Here's a random fact: The total weight of all the ants on Earth is roughly equal to the total weight of all the humans on Earth!",
+            "Intriguing tidbit: The smell of freshly-cut grass is actually a plant distress signal. It's the grass's way of signaling that it's being damaged.",
+            "Here's something unique: Octopuses have three hearts and blue blood!",
+            "Fun fact: The average person will spend about six months of their life waiting at red lights!",
+            "Did you know that a group of flamingos is called a flamboyance? It's quite fitting for these colorful birds!",
+            "Here's an unusual fact: Cows have best friends and get stressed when they are separated!",
+            "Here's something different: The world's oldest known creature, the Greenland shark, can live for over 400 years!",
+            "Here's a curveball: Honeybees can recognize human faces!",
+            "Random fact: The world's largest desert isn't the Sahara? It's actually Antarctica, which is classified as a cold desert due to its low precipitation!",
+            "Did you know that the Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the iron?",
+            "Here's something unexpected: Bananas are berries, but strawberries aren't!",
+            "Intriguing fact: The shortest time between two twins being born is 87 days!",
+            "Here's a surprise: The longest time between two twins being born is 87 days!",
+            "Did you know that the world's oldest known creature, the Greenland shark, can live for over 400 years?",
+            "Here's a random tidbit: The smell of freshly-cut grass is actually a plant distress signal. It's the grass's way of signaling that it's being damaged."
+          ]
+       
+    },
+    {
+      
+          "tag": "Weather",
+          "patterns": [
+            "What's the weather like today?",
+            "Can you tell me the forecast?",
+            "I want to know the weather forecast",
+            "How's the weather looking?",
+            "What's the temperature outside?",
+            "Is it going to rain today?",
+            "What's the weather forecast for tomorrow?",
+            "Any storms expected?",
+            "Do I need an umbrella today?",
+            "Is it going to be hot or cold?",
+            "Should I dress warmly?",
+            "What's the weather like right now?",
+            "Can you give me a weather update?",
+            "What's the forecast for this weekend?",
+            "Is there any chance of snow?",
+            "Do I need to prepare for any extreme weather?",
+            "Should I plan outdoor activities?"
+          ],
+          "responses": [
+            "The current temperature is [Current Temperature]°F/[Current Temperature]°C with [Weather Condition].",
+            "Today's forecast calls for [Weather Condition] with a high of [High Temperature]°F/[High Temperature]°C and a low of [Low Temperature]°F/[Low Temperature]°C.",
+            "Tomorrow is expected to be [Weather Condition] with a high of [High Temperature]°F/[High Temperature]°C and a low of [Low Temperature]°F/[Low Temperature]°C.",
+            "The weekend forecast includes [Weather Condition] on [Saturday/Sunday] with temperatures ranging from [Low Temperature]°F/[Low Temperature]°C to [High Temperature]°F/[High Temperature]°C.",
+            "There's a chance of [Type of Precipitation] later today, so you may want to carry an umbrella.",
+            "Extreme weather conditions are not expected, but it's always a good idea to stay informed and prepared.",
+            "You may want to dress warmly as the temperature is expected to drop throughout the day.",
+            "Outdoor activities should be enjoyable with [Weather Condition] and comfortable temperatures."
+          ]
+        }
     ]
   }
