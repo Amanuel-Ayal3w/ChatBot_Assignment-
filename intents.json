@@ -41,7 +41,7 @@
       ]
     },
         {
-          "tag": "greeting",
+          "tag": "name",
           "patterns": [
             "What is your name?"
           ],
