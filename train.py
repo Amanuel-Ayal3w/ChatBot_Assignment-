@@ -28,6 +28,7 @@ for intent in intents['intents']:
         # add to xy pair
         xy.append((w, tag))
 
+
 # stem and lower each word
 ignore_words = ['?', '.', '!']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
@@ -35,9 +36,9 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
-print(len(xy), "patterns")
-print(len(tags), "tags:", tags)
-print(len(all_words), "unique stemmed words:", all_words)
+# print(len(xy), "patterns")
+# print(len(tags), "tags:", tags)
+# print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data
 X_train = []
@@ -54,8 +55,8 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 10000
-batch_size = 8
+num_epochs = 1000
+batch_size = 128
 learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
@@ -69,7 +70,7 @@ class ChatDataset(Dataset):
         self.x_data = X_train
         self.y_data = y_train
 
-    # support indexing such that dataset[i] can be used to get i-th sample
+    # support indexing such that dataset[i] can be used to get i-th samp
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
 

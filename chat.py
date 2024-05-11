@@ -50,7 +50,7 @@ while True:
     prob = probs[0][predicted.item()]
 
     # If predicted probability is above a threshold, select a response from intents and print it
-    if prob.item() > 0.75:
+    if prob.item() > 0.9:
         for intent in intents['intents']:
             if tags[predicted.item()] == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")

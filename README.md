@@ -9,22 +9,19 @@ This project is a collaborative effort by Amanuel Ayalew and Aburahman Mohammed 
 
 ## Setting Up the Environment
 
-1. **Clone the Repository:**
-    ```bash
-    git clone <repository_url>
-    ```
 
-2. **Navigate to the Project Directory:**
+
+1. **Navigate to the Project Directory:**
     ```bash
     cd CHATBOT_ASSIGNMENT
     ```
 
-3. **Create a Virtual Environment:**
+2. **Create a Virtual Environment:**
     ```bash
     python3 -m venv venv
     ```
 
-4. **Activate the Virtual Environment:**
+3. **Activate the Virtual Environment:**
    - **Linux:**
      ```bash
      source venv/bin/activate
@@ -34,7 +31,7 @@ This project is a collaborative effort by Amanuel Ayalew and Aburahman Mohammed 
      venv\Scripts\activate
      ```
 
-5. **Install Dependencies:**
+4. **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
     ```

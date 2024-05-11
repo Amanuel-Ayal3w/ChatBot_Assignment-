@@ -1,0 +1,35 @@
+commit e0020bedaf444924b197ab37ae28516d2b70dc91 (HEAD -> main, origin/main, origin/HEAD)
+Author: Amanuel <amanuel.ayalew@aait.edu.et>
+Date:   Fri May 10 11:40:35 2024 +0300
+
+     updated intents.json and modified code
+
+commit 1dbf8a5577e48b1c2d4096e379249389fb3c6dce
+Author: Amanuel <amanuel.ayalew@aait.edu.et>
+Date:   Tue May 7 19:52:57 2024 +0300
+
+    added readme
+
+commit c49a8433638174ef21a696240a9fcd73d9feb4e3
+Author: Amanuel <amanuel.ayalew@aait.edu.et>
+Date:   Sat May 4 21:32:18 2024 +0300
+
+    read
+
+commit 088c453d50c1a5d84657b0b66f55110f06b29b51
+Author: Amanuel <amanuel.ayalew@aait.edu.et>
+Date:   Sat May 4 21:30:39 2024 +0300
+
+    fix read me
+
+commit 90867995cb527b62c36c36d8953bd3d213b4470c
+Author: Amanuel <amanuel.ayalew@aait.edu.et>
+Date:   Sat May 4 21:27:07 2024 +0300
+
+    first version
+
+commit 319146cbce52c87732dbbfe3d278e5d41598bf67
+Author: Amanuel Ayalew <amanuel.ayalew@aait.edu.et>
+Date:   Sat May 4 20:04:55 2024 +0300
+
+    Initial commit
